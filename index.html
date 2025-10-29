@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanye Quote Generator - Yellow Edition</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Yellow Background -->
+    <div class="yellow-background"></div>
+    <div class="yellow-overlay"></div>
+    
+    <!-- Floating Kanye Images -->
+    <img src="https://i.ibb.co/ZpFzjnJ6/pngegg.png" alt="Kanye" class="floating-kanye kanye-1">
+    <img src="https://i.ibb.co/qYqw1Xkp/Kanye-West-Transparent-Image.png" alt="Kanye" class="floating-kanye kanye-2">
+    <img src="https://i.ibb.co/5gVWzQ2J/pngegg-1.png" alt="Kanye" class="floating-kanye kanye-3">
+    <img src="https://i.ibb.co/LXCZkHpz/pngegg-2.png" alt="Kanye" class="floating-kanye kanye-4">
+    <img src="https://i.ibb.co/CKyx47gv/pngegg-3.png" alt="Kanye" class="floating-kanye kanye-5">
+    <img src="https://i.ibb.co/ZpFzjnJ6/pngegg.png" alt="Kanye" class="floating-kanye kanye-6">
+    <img src="https://i.ibb.co/qYqw1Xkp/Kanye-West-Transparent-Image.png" alt="Kanye" class="floating-kanye kanye-7">
+    <img src="https://i.ibb.co/5gVWzQ2J/pngegg-1.png" alt="Kanye" class="floating-kanye kanye-8">
+    <img src="https://i.ibb.co/LXCZkHpz/pngegg-2.png" alt="Kanye" class="floating-kanye kanye-9">
+    <img src="https://i.ibb.co/CKyx47gv/pngegg-3.png" alt="Kanye" class="floating-kanye kanye-10">
+    <img src="https://i.ibb.co/ZpFzjnJ6/pngegg.png" alt="Kanye" class="floating-kanye kanye-11">
+    <img src="https://i.ibb.co/qYqw1Xkp/Kanye-West-Transparent-Image.png" alt="Kanye" class="floating-kanye kanye-12">
+    
+    <div class="container">
+        <header>
+            <h1>Kanye Quote Generator</h1>
+            <p class="subtitle">Get your daily dose of Yeezy wisdom</p>
+            <p class="sarcastic-tagline">Because your life decisions clearly need the guidance of a self-proclaimed genius</p>
+        </header>
+        
+        <div class="counter">
+            Quotes generated: <span id="quoteCount">0</span>
+            <div class="sarcastic-message">That's <span id="wisdomPoints">0</span> wisdom points!</div>
+        </div>
+        
+        <div class="era-selector">
+            <button class="era-btn active" data-era="all">All Eras</button>
+            <button class="era-btn" data-era="college">College Dropout</button>
+            <button class="era-btn" data-era="graduation">Graduation</button>
+            <button class="era-btn" data-era="yeezus">Yeezus</button>
+            <button class="era-btn" data-era="donda">Donda</button>
+            <button class="era-btn" data-era="interview">Interviews</button>
+        </div>
+        
+        <main>
+            <div class="quote-card pulse">
+                <p class="quote-text" id="quoteText">Click the button to get a Kanye quote that will probably change your life! Or at least make you question it.</p>
+                <p class="quote-meta" id="quoteMeta"></p>
+            </div>
+            
+            <div class="buttons">
+                <button class="btn" id="generateBtn">
+                    <span>Generate Genius</span>
+                </button>
+                <button class="btn btn-secondary" id="copyBtn">
+                    <span>Copy Wisdom</span>
+                </button>
+                <button class="btn" id="tweetBtn">
+                    <span>Tweet This</span>
+                </button>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Inspired by Kanye West • Built by Ar Jaden • Because someone had to spread the gospel</p>
+        </footer>
+    </div>
+    
+    <div class="notification" id="notification">Quote copied to clipboard! You're welcome.</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
